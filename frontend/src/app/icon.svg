@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4E8C1" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#C58B55" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="#0A0E0C" />
+  <circle cx="50" cy="50" r="44" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+  <!-- Luxury Lotus / Sparkle Emblem -->
+  <path d="M50 18 C55 35 65 45 82 50 C65 55 55 65 50 82 C45 65 35 55 18 50 C35 45 45 35 50 18 Z" fill="url(#goldGrad)" />
+  <circle cx="50" cy="50" r="6" fill="#FAF8F5" />
+</svg>

@@ -1,0 +1,238 @@
+import { ServiceItem, Therapist, SpaPackage, Testimonial, BlogPost } from '@/types';
+
+export const salonServices: ServiceItem[] = [
+  {
+    id: 'royal-kumkumadi-facial',
+    name: 'Royal Ayurvedic Kumkumadi & 24K Gold Glow Facial',
+    category: 'facials',
+    description: 'Heritage Indian beauty ritual infused with authentic Kashmiri saffron (Kumkumadi Thailam), pure 24K gold foil, and lotus bio-extracts for luminous skin complexion.',
+    durationMinutes: 75,
+    price: 4800,
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800',
+    benefits: ['Natural glow & hyper-pigmentation reduction', 'Deep saffron nourishment', 'Firms & rejuvenates skin texture', 'Promotes collagen renewal'],
+    includes: ['Kashmiri saffron double cleanse', '24K Gold & Kumkumadi oil mask', 'Kansa wand facial massage', 'Rosewater hydration mist'],
+  },
+  {
+    id: 'vedic-ubtan-bridal-ritual',
+    name: 'Vedic Organic Ubtan & Chandan Glow Body Polishing',
+    category: 'facials',
+    description: 'Traditional Indian bridal preparation ritual using wild turmeric, sandalwood (Chandan), sweet almond powder, and fresh saffron to exfoliate and brighten.',
+    durationMinutes: 90,
+    price: 6200,
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1512290900673-70025741759d?q=80&w=800',
+    benefits: ['Smooths skin texture', 'Evens skin tone', 'Removes dead skin cells', 'Leaves skin silky & fragrant'],
+    includes: ['Sandalwood micro-exfoliation', 'Turmeric & milk wrap', 'Aromatic steam bath', 'Jasmine oil hydration'],
+  },
+  {
+    id: 'shirodhara-herbal-therapy',
+    name: 'Kerala Shirodhara & Abhyanga Herbal Massage',
+    category: 'massage',
+    description: 'Continuous warm herbal oil stream poured across the third-eye chakra combined with full-body Synchronized Abhyanga massage to dissolve stress and mental fatigue.',
+    durationMinutes: 90,
+    price: 5500,
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800',
+    benefits: ['Calms nervous system & migraines', 'Deep restful sleep enhancement', 'Relieves mental anxiety', 'Nourishes scalp & hair roots'],
+    includes: ['Warm Medicated Oil Stream (Shirodhara)', 'Four-hand Abhyanga massage', 'Herbal steam room session'],
+  },
+  {
+    id: 'hot-stone-bamboo-massage',
+    name: 'Volcanic Basalt & Warm Bamboo Muscle Therapy',
+    category: 'massage',
+    description: 'Deep tissue therapy combining smooth heated basalt stones and warmed bamboo stalks to dissolve muscular tension, improve lymphatic flow, and restore inner harmony.',
+    durationMinutes: 75,
+    price: 4500,
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800',
+    benefits: ['Relieves chronic muscle stiffness', 'Deep mental relaxation', 'Boosts circulation', 'Detoxifies bodily tissues'],
+    includes: ['Aromatherapy oil selection', 'Warmed bamboo strokes', 'Volcanic stone spinal alignment'],
+  },
+  {
+    id: 'couture-balayage-gloss',
+    name: 'Royal Silk Hair Spa & Balayage Glossing',
+    category: 'hair',
+    description: 'Customized dimensional color blending and deep silk protein keratin spa treatment formulated for Indian hair textures to enhance mirror shine and tame humidity friction.',
+    durationMinutes: 150,
+    price: 8500,
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800',
+    benefits: ['Frizz control for Indian humidity', 'Bond-protecting shine', 'Customized color blending', 'Low maintenance grow-out'],
+    includes: ['Color consultation', 'Silk protein keratin spa', 'Gloss glaze', 'Signature blow-dry styling'],
+  },
+  {
+    id: 'diamond-mani-pedi',
+    name: 'Rose & Sandalwood Luxury Spa Mani-Pedi',
+    category: 'nails',
+    description: 'Opulent nail care ritual featuring organic rose petal soak, sandalwood powder exfoliation, warm paraffin dip, and long-wearing gel polish application.',
+    durationMinutes: 75,
+    price: 3200,
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800',
+    benefits: ['Softens dehydrated hands & feet', 'Nourishes cuticle beds', 'Long-lasting mirror shine'],
+    includes: ['Rose petal bath', 'Sandalwood scrub', 'Paraffin dip', 'Gel polish styling'],
+  },
+  {
+    id: 'sculpting-microcurrent-facial',
+    name: 'Microcurrent Bio-Lift & V-Line Contour',
+    category: 'aesthetics',
+    description: 'Non-invasive facial contouring utilizing electrical microcurrent micro-pulses to re-educate facial muscles, lift sagging jawlines, and enhance cheekbone definition.',
+    durationMinutes: 60,
+    price: 5200,
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800',
+    benefits: ['Immediate jawline lifting', 'Sharpens cheekbone contour', 'Stimulates ATP collagen production'],
+    includes: ['Conductive gel application', 'Microcurrent lifting pass', 'Peptide firming sheet mask'],
+  },
+];
+
+export const salonTherapists: Therapist[] = [
+  {
+    id: 'dr-ananya-sharma',
+    name: 'Dr. Ananya Sharma',
+    role: 'Lead Aesthetic & Ayurvedic Doctor',
+    specialty: 'Kumkumadi Facial Rituals & Cellular Bio-Peels',
+    experienceYears: 15,
+    bio: 'Pioneer in combining Vedic herbal formulations with modern French aesthetic technology, trained in Mumbai and Paris.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800',
+    rating: 5.0,
+  },
+  {
+    id: 'priya-[#deshmukh]',
+    name: 'Priya Deshmukh',
+    role: 'Master Kerala Ayurveda & Body Specialist',
+    specialty: 'Shirodhara & Synchronized Abhyanga Therapy',
+    experienceYears: 12,
+    bio: 'Hailing from Kerala, Priya brings 12+ years of authentic Panchakarma and therapeutic bodywork expertise to Lumière.',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800',
+    rating: 4.9,
+  },
+  {
+    id: 'rohan-kapoor',
+    name: 'Rohan Kapoor',
+    role: 'Executive Hair Director',
+    specialty: 'Couture Balayage & Keratin Silk Spas',
+    experienceYears: 11,
+    bio: 'Celebrity hair director in Mumbai specializing in customized color blending and humidity-shielding hair treatments.',
+    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800',
+    rating: 5.0,
+  },
+];
+
+export const spaPackages: SpaPackage[] = [
+  {
+    id: 'the-royal-maharani-escape',
+    name: 'The Royal Maharani Signature Day Spa',
+    subtitle: 'Half-Day Ultimate Rejuvenation Journey',
+    duration: '4.5 Hours',
+    price: 12500,
+    originalPrice: 15000,
+    badge: 'Most Popular',
+    popular: true,
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800',
+    includedServices: [
+      '90-min Shirodhara & Abhyanga Herbal Therapy',
+      '75-min Royal Kumkumadi & 24K Gold Glow Facial',
+      'Rose & Sandalwood Luxury Spa Mani-Pedi',
+      'Organic Saffron High Tea & Private Suite Access',
+    ],
+  },
+  {
+    id: 'bridal-glow-sanctuary',
+    name: 'Couture Indian Bridal Radiance Package',
+    subtitle: 'Complete Pre-Wedding Pampering & Hair Styling',
+    duration: '3.5 Hours',
+    price: 10800,
+    originalPrice: 12800,
+    badge: 'Bridal Choice',
+    popular: false,
+    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=800',
+    includedServices: [
+      'Vedic Organic Ubtan & Chandan Body Polishing',
+      'Royal Silk Hair Spa & Signature Blowout',
+      'Rose & Sandalwood Gel Manicure',
+      'Bridal Glow Care Home Kit',
+    ],
+  },
+];
+
+export const salonTestimonials: Testimonial[] = [
+  {
+    id: '1',
+    author: 'Sunita Mehra',
+    role: 'Fashion & Luxury Lifestyle Director, Mumbai',
+    comment: 'Lumière is an absolute sanctuary in Bandra. Dr. Ananya’s Royal Kumkumadi Facial gave my skin an unbelievable glass-like glow before Lakme Fashion Week!',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200',
+    treatment: 'Royal Kumkumadi Facial',
+    date: 'February 2026',
+  },
+  {
+    id: '2',
+    author: 'Kavita & Rajesh Singhania',
+    role: 'Private Client, New Delhi',
+    comment: 'We booked the Royal Maharani Escape for our anniversary. The authentic Shirodhara oil treatment and saffron high tea made us feel like royalty.',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200',
+    treatment: 'Royal Maharani Escape',
+    date: 'January 2026',
+  },
+  {
+    id: '3',
+    author: 'Dr. Meera Iyer',
+    role: 'Dermatologist, Bengaluru',
+    comment: 'As a dermatologist, I am deeply impressed by Lumière’s clinical hygiene standards and their pure organic saffron formulations.',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200',
+    treatment: 'Microcurrent Bio-Lift',
+    date: 'March 2026',
+  },
+];
+
+export const salonBlogPosts: BlogPost[] = [
+  {
+    id: '1',
+    slug: 'science-of-kumkumadi-saffron-facials',
+    title: 'The Vedic Science Behind Kumkumadi Saffron & 24K Gold Therapy',
+    excerpt: 'Explore how Kashmiri saffron (Kumkumadi Thailam) and 24K gold foil reduce hyper-pigmentation and stimulate collagen synthesis naturally.',
+    content: `
+      <p>Kumkumadi Thailam has been prized in Indian Ayurveda for over 3,000 years. Rich in antioxidants and crocin from pure Kashmiri saffron, it naturally lightens dark spots and revives dull complexions.</p>
+      <h3>Synergy of Gold & Saffron</h3>
+      <p>When combined with pure 24-karat gold foil micro-particles, saffron oils penetrate deep into dermis layers, boosting micro-circulation and producing an unmistakable bridal radiance.</p>
+    `,
+    category: 'Ayurvedic Skincare',
+    author: {
+      name: 'Dr. Ananya Sharma',
+      role: 'Lead Aesthetic & Ayurvedic Doctor',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200',
+    },
+    publishedAt: '2026-03-15',
+    readTime: '5 min read',
+    coverImage: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200',
+    tags: ['Ayurveda', 'Kumkumadi', '24K Gold', 'Saffron', 'Facials'],
+  },
+];
+
+export const salonFaqs = [
+  {
+    id: 'faq-1',
+    question: 'How far in advance should I book my appointment?',
+    answer: 'We recommend booking 3 to 7 days in advance for weekend slots or specific master specialists. Same-day appointments can be accommodated based on live availability.',
+  },
+  {
+    id: 'faq-2',
+    question: 'What organic and herbal product lines do you use?',
+    answer: 'We exclusively formulate using 100% organic Kashmiri saffron, pure sandalwood, cold-pressed Kerala herbal oils, and certified cruelty-free bio-peptides.',
+  },
+  {
+    id: 'faq-3',
+    question: 'What is your cancellation policy?',
+    answer: 'Appointments may be rescheduled or cancelled without penalty up to 24 hours prior to your scheduled service.',
+  },
+  {
+    id: 'faq-4',
+    question: 'Do you offer private VIP suites for bridal parties?',
+    answer: 'Yes! Our Sanctuary Lounge features private VIP suites complete with organic saffron tea bars, champagne service, and dedicated master artists for bridal parties.',
+  },
+];
